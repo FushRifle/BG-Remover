@@ -1,7 +1,13 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  reactStrictMode: true,
+  output: "standalone",
+  trailingSlash: false,
+  pageExtensions: ["ts", "tsx", "js", "jsx"],
 };
 
 export default nextConfig;
+// export default withBundleAnalyzer({
+//   reactStrictMode: true,
+//   output: "standalone",    
